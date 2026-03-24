@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+    - name: staging_source
+      description: Gets data from redshift staging layer
+      database: staging
+      schema: public
+      tables:
+
+        - name: customers
+        - name: parking_locations
+        - name: parking_sessions
+        - name: payments
+        

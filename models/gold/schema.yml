@@ -1,0 +1,18 @@
+version: 2
+
+models:
+    - name: dim_customers
+      description: "customers dimensions table"
+    - name: dim_parking_locations
+      description: "parking locations dimensions table"
+    - name: fact_parking_sessions
+      description: "parking sessions fact table"
+    - name: slvr_customers
+      description: "Silver layer customers"
+    - name: slvr_parking_locations
+      description: "Silver layer parking locations"
+    - name: slvr_parking_sessions
+      description: "Silver layer parking locations"
+    - name: slvr_payments
+      description: "Silver layer payments"
+    
