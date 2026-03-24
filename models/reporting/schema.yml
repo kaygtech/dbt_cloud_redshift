@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: mv_daily_location_performance
+    description: "Daily parking revenue and utilization metrics by location"
+
+    columns:
+      - name: location_id
+        description: "Parking location identifier"
+        tests:
+          - not_null
+
+      - name: location_name
+        description: "Name of parking location"
+
+      - name: session_date
+        description: "Date of parking session"
+        tests:
+          - not_null
+
+      - name: total_sessions
+        description: "Number of parking sessions per day"
+
+      - name: total_revenue
+        description: "Total revenue generated per day"
+
+      - name: avg_session_hours
+        description: "Average duration of parking sessions"
+
+      - name: utilization_rate
+        description: "Sessions relative to location capacity"
+
+      - name: revenue_per_hour
+        description: "Revenue efficiency per hour"
